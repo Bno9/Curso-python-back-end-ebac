@@ -1,0 +1,80 @@
+
+#return = retorna da função atual para a função que chamou ela (se for a main vai encerrar o programa)
+
+#return True ou variavel = retorna um valor pra quem chamou a função
+
+"""
+def soma(a, b):
+    resultado = a + b
+    return resultado
+
+x = soma(3, 5)
+print(x)  # Saída: 8
+"""
+
+
+#break = quebra o loop (se for um loop dentro de outro, ele vai voltar pro loop anterior)
+
+
+"""
+try:
+    blablabla
+except valueError:
+    print("erro")
+    continue = interrompe a iteração atual e volta pro inicio do loop (só pode ser usado em loops e não é necessario para usar o try)
+
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+"""
+
+
+
+
+#Dicionario com outro dicionario dentro funciona mais ou menos assim
+"""
+estoque = {
+    "Arroz": {
+        "quantidade": 100,
+        "preco": 5.50
+    },
+    "Feijão": {
+        "quantidade": 50,
+        "preco": 7.80
+    },
+    "Macarrão": {
+        "quantidade": 200,
+        "preco": 3.20
+    }
+}
+"""
+
+"""
+Adicionando um novo produto:
+
+estoque["Açúcar"] = {
+    "quantidade": 120,
+    "preco": 4.10
+}
+
+Acessar o preço do feijão:
+
+preco_feijao = estoque["Feijão"]["preco"]
+print(preco_feijao)  # Saída: 7.80
+
+Adicionar um novo produto:
+
+estoque["Açúcar"] = {"quantidade": 120, "preco": 4.10}
+print(estoque["Açúcar"])  # Saída: {'quantidade': 120, 'preco': 4.1}
+
+Alterar o preço do macarrão:
+
+estoque["Macarrão"]["preco"] = 3.50
+print(estoque["Macarrão"]["preco"])  # Saída: 3.50
+
+
+#se não tivesse as strings definindo o que é cada um, daria pra acessar as informações que nem em um array, usando o indice tipo assim
+
+estoque["Macarrão"][1] = 3.50 #altera o preço que é o segundo valor do dicionario, se fosse a quantidade seria um 0, pois é o primeiro valor
+"""
